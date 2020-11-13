@@ -11,13 +11,73 @@ body {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	margin-top: 50px;
 }
 
 
 .nav {
     display: flex;
     flex-direction: row;
-    
+	margin-top: 70px;
+	margin-left: 300px;
+}
+
+.navitem {
+	padding-right: 10px;
+
+}
+
+
+
+.main {
+	display: grid;
+	grid-template-columns: 280px 400px;
+	grid-template-rows: 300px 300px 300px;
+	justify-content: center;
+	grid-gap: 20px;
+
+}
+
+.griditem1 {
+	background-color: azure;
+}
+
+.griditem1:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.griditem2 {
+	background-color: #f2f2f2 ;
+	text-align: right;
+	object-fit: contain;
+}
+
+.griditem3 {
+	background-color: green;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	
+}
+
+.griditem4 {
+	background-color: pink;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	
+}
+
+.griditem5 {
+	background-color: yellow;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	
+}
+
+.griditem6 {
+	background-color: f2f2f2;
+	
+}
+
+.footer {
+	margin-top: 20px;
+	text-align: center;
 }
 
 
@@ -25,54 +85,63 @@ body {
 
 <body>
 
-<header class="top-head">
-	<div>
-	<h1>Andrew Tyler Lockwood</h1>
-	<p>Design. Development.</p>
-	</div>
-	<div>
-		<nav class="nav">
-			<div>
-				<a href="main.html"> <font size="2">About</font></a>
-				</div>
-			<div>
-				<a href="projects.html"> <font size="2">Projects/Portfolio</font></a>
-				</div>
-		</nav>
-	</div>
+	<header class="top-head">
+		<div>
+			<h1>Andrew Lockwood</h1>
+			<p>Design. Development.</p>
+		</div>
+		<div>
+			<nav class="nav">
+				<div class="navitem">
+					<a href="main.html"> <font size="2">About</font></a>
+					</div>
+				<div class="navitem">
+					<a href="projects.html"> <font size="2">Projects/Portfolio</font></a>
+					</div>
+			</nav>
+		</div>
 	
-</header>
-<hr>
+	</header>
+	<hr>
 
-<div class="para">
-	<p> words and workd dsad aqwe awed 
-	</p>
-</div>
+	<main class="main">
+		<div class="griditem1">Stuff
+			</div>
 
-<main class="about">
-	<div class="aboutitem">Stuff
-		</div>
-	<div class="aboutitem">Stuff
-		</div>
-	<div class="aboutitem">Stuff
-		</div>
-</main>
+		<div class="griditem2">
+			<p>StuffStuffStuffStuffStuffStuffStuffStuffSt</p>
+			<p>StuffStuffStuffStuffStuffStuffStuffStuffSt</p>
+			<p>StuffStuffStuffStuffStuffStuffStuffStuffSt</p>
+			<p>StuffStuffStuffStuffStuffStuffStuffStuffSt</p>
+			<p>StuffStuffStuffStuffStuffStuffStuffStuffSt</p>
+			<p>StuffStuffStuffStuffStuffStuffStuffStuffSt</p>
+			<p>StuffStuffStuffStuffStuffStuffStuffStuffSt</p>
 
-<div class="para">
-	<p> asd kawe asdfawer weswedfkl s
-	</p>
-</div>
+			</div>
 
-<footer>
-<hr>
+		<div class="griditem3">Stuff
+			</div>
 
-<div>
-	<div style="margin-right: 10%; padding: 0px 20px 20px 20px; float: right;">
-		<a href="https://github.com/Andy-lockwood"><img class="img2" src = "OIP.jfif"  width="30"; height="30" align="right"></a>
-		<a href="https://www.artstation.com/andrewlockwood"><img class="img2" src = "artstation.png"  width="30"; height="30" align="right"></a>
-	</div>
-	<div style="text-align: left; font-size: 20px; margin-left: 10%; margin-top: 10px;">AndrewTLockwood@gmail.com</div>
-<div>
-</footer>
+		<div class="griditem4">Stuff
+			</div>
+
+		<div class="griditem5">Stuff
+			</div>
+
+		<div class="griditem6">
+			<p>StuffStuffStuffStuffStuffStuffStuffStuffSt</p>
+			<p>StuffStuffStuffStuffStuffStuffStuffStuffSt</p>
+			<p>StuffStuffStuffStuffStuffStuffStuffStuffSt</p>
+			<p>StuffStuffStuffStuffStuffStuffStuffStuffSt</p>
+			<p>StuffStuffStuffStuffStuffStuffStuffStuffSt</p>
+			<p>StuffStuffStuffStuffStuffStuffStuffStuffSt</p>
+			<p>StuffStuffStuffStuffStuffStuffStuffStuffSt</p>
+			</div>
+	</main>
+
+	<footer class="footer">
+		<hr>
+		<div>andrewtlockwood@gmail.com</div>
+	</footer>
 </body>
 </html> 
