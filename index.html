@@ -3,63 +3,21 @@
 <style>
 
 body {
-	background-color:  #fcfcfc ;
+	background-color:  #f2f2f2 ;
 	margin: 0;
 	}
+
+.top-head {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
 
 
 .nav {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    word-spacing: 20px;
-    margin-top: 60px;
-    text-align: center;
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-    background-color: #c2c2c2;
-    padding-top: 25px;
-	padding-bottom: 25px;
-}
-
-.navitem {
-	padding-right: 10px;
-	padding-left: 10px;
-}
-
-.navitem a {
-	color:   black;
-    font-family: "Times New Roman", Times, serif; 
-    text-decoration: none;
-}
-
-
-.navitem a:hover {
-	color: white;
-}
-
-.navitem a:visited {
-	color: white;
-}
-
-
-.about {
-	display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.aboutitem {
-	padding-right: 20px;
-	padding-left: 20px;
-	padding-top: 60px;
-	padding-bottom: 60px
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-
-.para {
-	margin-left: 100px;
-	margin-right: 100px;
+    
 }
 
 
@@ -67,17 +25,21 @@ body {
 
 <body>
 
-<header>
-	<h1 style="text-align:center; margin-top: 50px;"> <font size = "15px">Andrew Tyler Lockwood</font></h1>
-
-	<nav class="nav">
-		<div class="navitem">
-			<a href="main.html"> <font size="6">About</font></a>
-			</div>
-		<div class="navitem">
-			<a href="projects.html"> <font size="6">Projects/Portfolio</font></a>
-			</div>
-	</nav>
+<header class="top-head">
+	<div>
+	<h1>Andrew Tyler Lockwood</h1>
+	<p>Design. Development.</p>
+	</div>
+	<div>
+		<nav class="nav">
+			<div>
+				<a href="main.html"> <font size="2">About</font></a>
+				</div>
+			<div>
+				<a href="projects.html"> <font size="2">Projects/Portfolio</font></a>
+				</div>
+		</nav>
+	</div>
 	
 </header>
 <hr>
