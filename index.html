@@ -3,89 +3,29 @@
 <style>
 
 body {
-	background-color:  #f2f2f2 ;
 	margin: 0;
 	}
 
 .top-head {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
-	margin-top: 50px;
+	justify-content: space-around;
+	background-color:  #e9dfdf;
 }
 
-
-.nav {
-    display: flex;
-    flex-direction: row;
-	margin-top: 70px;
-	margin-left: 300px;
-}
-
-.navitem {
-	padding-right: 10px;
-
+.imageDiv{
+	height: 80vh;
+	background-color:  #e9dfdf;
 }
 
 
 .main {
-	display: grid;
-	grid-template-columns: 280px 400px;
-	grid-template-rows: 300px 300px 300px;
-	justify-content: center;
-	grid-gap: 20px;
-
-}
-
-.griditem1 {
-	background-color: azure;
-	object-fit: cover;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.griditem1:hover {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.griditem2 {
-	background-color: #f2f2f2 ;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 	text-align: center;
-	object-fit: cover;
-}
-
-.griditem3 {
-	background-color: green;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	object-fit: cover;
-	width:280px;
-	height:300px;
-}
-
-.griditem4 {
-	background-color: pink;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	object-fit: cover;	
-}
-
-.griditem5 {
-	background-color: yellow;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	object-fit: cover;
-}
-
-.griditem6 {
-	background-color: f2f2f2;
-	
-}
-
-.img1 {
-	width:280px;
-	height:300px;
-}
-
-.img2 {
-	width:400px;
-	height:300px;
+	background-color:  #f1f1f1;
+	width: 100vw;
 }
 
 .footer {
@@ -93,30 +33,6 @@ body {
 	text-align: center;
 	margin-bottom: 20px;
 }
-
-@media screen and (max-width: 650px) {
-	.main {
-	grid-template-columns: 400px;
-	grid-template-rows: 300px 300px 300px 300px 300px 300px;
-	justify-content: center;
-  	}
-	.nav {
-		text-align: center;
-		margin-left: 0px;
-	}
-
-	.top-head {
-		flex-direction: column;
-		text-align: center;
-	}
-
-	.griditem3 {
-		width: 400px;
-		height: 300px;
-	}
-
-}
-
 
 </style>
 
@@ -126,61 +42,28 @@ body {
   </head>
 
 <body>
-
-	<header class="top-head">
+	
+	<div class="imageDiv">
 		<div>
 			<h1>Andrew Lockwood</h1>
-			<p>Design. Development.</p>
+			<p>Design & Development.</p>
 		</div>
-		<div>
-			<nav class="nav">
-				<div class="navitem">
-					<a href="main.html"> <font size="2">About</font></a>
-					</div>
-				<div class="navitem">
-					<a href="projects.html"> <font size="2">Projects/Portfolio</font></a>
-					</div>
-			</nav>
-		</div>
-	
-	</header>
-	<hr>
+		<nav style="display: flex; flex-direction: row; justify-content: space-around; align-items: center">
+			<div>
+				<a href="main.html"> <font size="2">About</font></a>
+			</div>
+			<div>
+				<a href="projects.html"> <font size="2">Projects/Portfolio</font></a>
+			</div>
+		</nav>
+	</div>
 
 	<main class="main">
-		<img class="griditem1, img1" src="pic1.jpg" alt="Paris">
-
-		<div class="griditem2">
-			<p>StuffStuffStuffStuffStuffStuffStuffStuffSt</p>
-			<p>StuffStuffStuffStuffStuffStuffStuffStuffSt</p>
-			<p>StuffStuffStuffStuffStuffStuffStuffStuffSt</p>
-			<p>StuffStuffStuffStuffStuffStuffStuffStuffSt</p>
-			<p>StuffStuffStuffStuffStuffStuffStuffStuffSt</p>
-			<p>StuffStuffStuffStuffStuffStuffStuffStuffSt</p>
-			<p>StuffStuffStuffStuffStuffStuffStuffStuffSt</p>
-
-			</div>
-
-		<img class="griditem3" src="pic2.jpg" alt="Paris" >
-
-		<img class="griditem4, img2" src="pic3.jpg" alt="Paris">
-
-		<div class="griditem5">Stuff
-			</div>
-
-		<div class="griditem6">
-			<p>StuffStuffStuffStuffStuffStuffStuffStuffSt</p>
-			<p>StuffStuffStuffStuffStuffStuffStuffStuffSt</p>
-			<p>StuffStuffStuffStuffStuffStuffStuffStuffSt</p>
-			<p>StuffStuffStuffStuffStuffStuffStuffStuffSt</p>
-			<p>StuffStuffStuffStuffStuffStuffStuffStuffSt</p>
-			<p>StuffStuffStuffStuffStuffStuffStuffStuffSt</p>
-			<p>StuffStuffStuffStuffStuffStuffStuffStuffSt</p>
-			</div>
+		<p style="">I am an engineer and a designer located in hampton roads. I am currently working on Odin Project.</p>
 	</main>
 
 	<footer class="footer">
-		<hr>
-		<div>andrewtlockwood@gmail.com</div>
+		<div>andrewtlockwood@tuta.io</div>
 	</footer>
 </body>
 </html> 
