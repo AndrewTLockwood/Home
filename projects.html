@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <style>
 
@@ -12,25 +12,23 @@ body {
 	flex-direction: row;
 	justify-content: space-between;
 	background-color:  #e9dfdf;
-	align-items: center;
-	margin-left: 10vw;
-	margin-right:  10vw;
-	height: 20vh;
-	width: 80vw;
+	margin-top: 8vh;
+	margin-left: 15vw;
+	margin-right:  15vw;
+	height: 100vh;
 }
 
 
 
 .main {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
 	background-color:  #e9dfdf;
 	width: 80vw;
-	height: 80vh;
-	margin-top: 10px;
+	margin-top: 200px;
 	margin-left: 10vw;
 	margin-right: 10vw;
 }
@@ -54,10 +52,10 @@ img.image {
 }
 
 .footer {
-	margin-top: 50px;
+	margin-top: 40px;
 	text-align: center;
+	margin-bottom: 40px;
 	background-color:  #e9dfdf;
-	height: 100vh;
 }
 
 .odinLink {
@@ -68,23 +66,6 @@ img.image {
 	margin-bottom: 25px;
 }
 
-.project {
-	width: 80vw;
-	height: 100vh;
-	margin-left: 10vw;
-	margin-right: 10vw;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-.projSquare {
-	width: 200px;
-	height: 100px;
-	background-color: red;
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
 </style>
 
 <head>
@@ -101,36 +82,34 @@ img.image {
 			</div>
 			<div style="display: flex; flex-direction: row; justify-content: space-around; align-items: center">
 				<div>
-					<a class = "one" href="#project">Projects</a>
+					<a class = "one" href="index.html">Main</a>
 				</div>
 				<div>
-					<a class = "one" href="#contact">Contact</a>
+					<a class = "one" href="projects.html">Projects</a>
+				</div>
+				<div>
+					<a class = "one" href="projects.html">About</a>
 				</div>
 			</div>
 		</div>
 	</div>
 
 	<main class="main">
-		<div style="width: 350px; margin-top: 30px;">
-			<p style="font-size: 30px;">Andrew Lockwood</p>
-			<p style="font-size: 25px;"> I am an computer engineering graduate and interested in creating web apps. I have a cat named Sookie.</p>
+		<div>
+			<img ></img>
+            <p>Etch a Sketch</p>
 		</div>	
-		<img class="image" src="pic2.jpg" alt="Italian Trulli">	
+        <div>
+			<img ></img>
+            <p>Tic-Tac-Toe</p>
+		</div>
+        <div>
+			<img ></img>
+            <p>somrthing Else</p>
+		</div>
+
+		
 	</main>
-	<div id=project class="project">
-		<div class="projSquare">
 
-		</div>
-		<div class="projSquare">
-
-		</div>
-		<div class="projSquare">
-
-		</div>
-	</div>
-
-	<div id="contact"class="footer">
-		<p>AndrewtLockwood@gmail.com</p>
-	</div>
 </body>
 </html> 
